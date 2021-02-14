@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30330.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KMD", "KMD\KMD.csproj", "{388D7530-1DC3-4A1F-B622-6961AA5D8A40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KMDTests", "KMDTests\KMDTests.csproj", "{F6F354FA-3ED0-4A0C-A884-0703E188A626}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{388D7530-1DC3-4A1F-B622-6961AA5D8A40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{388D7530-1DC3-4A1F-B622-6961AA5D8A40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{388D7530-1DC3-4A1F-B622-6961AA5D8A40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{388D7530-1DC3-4A1F-B622-6961AA5D8A40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6F354FA-3ED0-4A0C-A884-0703E188A626}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6F354FA-3ED0-4A0C-A884-0703E188A626}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6F354FA-3ED0-4A0C-A884-0703E188A626}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6F354FA-3ED0-4A0C-A884-0703E188A626}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9900BF4D-3B61-490D-B6FE-B292A91239EE}
+	EndGlobalSection
+EndGlobal

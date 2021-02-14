@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "JSON Schema for sites to be tested",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "mangaUrl": {
+        "type": "string"
+      },
+      "mangaName": {
+        "type": "string"
+      },
+      "mangaCover": {
+        "type": "string"
+      }
+    }
+  }
+}

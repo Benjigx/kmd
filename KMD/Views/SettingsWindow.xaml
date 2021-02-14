@@ -1,0 +1,74 @@
+﻿<rxui:ReactiveWindow
+    x:Class="KMD.Views.SettingsWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="clr-namespace:MaterialDesignExtensions.Controls;assembly=MaterialDesignExtensions"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:rxui="http://reactiveui.net"
+    xmlns:vm="clr-namespace:KMD.ViewModels"
+    Title="Configurações"
+    Width="430"
+    Height="210"
+    x:TypeArguments="vm:SettingsWindowVM"
+    Background="{DynamicResource MaterialDesignPaper}"
+    FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto"
+    ResizeMode="NoResize"
+    ShowInTaskbar="False"
+    TextElement.FontSize="14"
+    TextElement.FontWeight="Light"
+    TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+    WindowStartupLocation="CenterScreen"
+    mc:Ignorable="d">
+    <Canvas Margin="0,0,20,20">
+        <TextBox
+            x:Name="DownloadPathTextBox"
+            Canvas.Left="10"
+            Canvas.Top="10"
+            Width="333"
+            Height="30"
+            materialDesign:HintAssist.Hint="Local de download" />
+        <Button
+            x:Name="SelectDirButton"
+            Canvas.Left="348"
+            Canvas.Top="10"
+            Width="56"
+            Height="30"
+            Style="{DynamicResource MaterialDesignRaisedDarkButton}"
+            ToolTip="Selecionar pasta">
+            <materialDesign:PackIcon
+                Width="20"
+                Height="20"
+                Kind="Folder" />
+        </Button>
+        <TextBlock
+            Canvas.Left="46"
+            Canvas.Top="75"
+            Padding="0,5,5,5"
+            Style="{DynamicResource MaterialDesignBody1TextBlock}"
+            Text="Downloads simultâneos" />
+        <controls:OversizedNumberSpinner
+            x:Name="ParallelDownloadsSpinner"
+            Canvas.Left="8"
+            Canvas.Top="55"
+            Width="30"
+            Height="64"
+            Max="5"
+            Min="1" />
+        <ToggleButton
+            x:Name="AddLeadingZerosToggle"
+            Canvas.Left="7"
+            Canvas.Top="137"
+            Style="{StaticResource MaterialDesignSwitchDarkToggleButton}"
+            ToolTip="Ex.: 1, 2, 3... -&gt; 01, 02, 03..." />
+        <TextBlock
+            Canvas.Left="46"
+            Canvas.Top="138"
+            Width="360"
+            Style="{DynamicResource MaterialDesignBody1TextBlock}"
+            Text="Adicionar zeros no nome da imagem" />
+        <!--<ToggleButton IsChecked="{Binding AddLeadingZerosChapter, Mode=TwoWay}" Canvas.Left="7" Canvas.Top="151" Style="{StaticResource MaterialDesignSwitchDarkToggleButton}" ToolTip="Default ToggleButton Style"/>
+        <TextBlock Canvas.Left="46" TextWrapping="Wrap" Text="Adicionar zeros no nome do capítulo" Canvas.Top="151" Width="359" Style="{DynamicResource MaterialDesignBody1TextBlock}"/>-->
+    </Canvas>
+</rxui:ReactiveWindow>
